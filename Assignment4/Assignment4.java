@@ -41,10 +41,10 @@ public class Assignment4 {
 	 */
 	public static String intToRoman(int num) {
 		String thousand[] = {"", "M", "MM", "MMM"};
-	    String hundred[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
-	    String ten[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
-	    String unit[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
-	    return thousand[num/1000] + hundred[(num%1000)/100]+ ten[(num%100)/10] + unit[num%10];
+	    	String hundred[] = {"", "C", "CC", "CCC", "CD", "D", "DC", "DCC", "DCCC", "CM"};
+	    	String ten[] = {"", "X", "XX", "XXX", "XL", "L", "LX", "LXX", "LXXX", "XC"};
+	    	String unit[] = {"", "I", "II", "III", "IV", "V", "VI", "VII", "VIII", "IX"};
+	    	return thousand[num/1000] + hundred[(num%1000)/100]+ ten[(num%100)/10] + unit[num%10];
 	}
 	
 	/*Extra credit: There are two sorted arrays nums1 and nums2 of size m and n respectively. Find the median of the two sorted arrays. (Score 2)
@@ -171,7 +171,7 @@ class RockPaperScissorsGame {
 }
 
 /*3. Every computer on the Internet has a unique identifying number, called an Internet protocol (IP)address. 
- To contact a computer on the Internet, you send a message to the computer¡¯s IP address.
+ To contact a computer on the Internet, you send a message to the computerÂ¡Â¯s IP address.
  */
 class IpAddress {
 	String dottedDecimal;
@@ -213,7 +213,7 @@ class IpAddress {
 }
 
 /*4. Design a simple registration system that allows Student to register in a course using 2 classes: 
-class Student & class Course. Implement the scenarios in class Test¡¯s main method.
+class Student & class Course. Implement the scenarios in class TestÂ¡Â¯s main method.
  */
 class Student {
 	String name, id;
