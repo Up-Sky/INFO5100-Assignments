@@ -61,15 +61,17 @@ public class Assignment3 {
 			if(!isVowel)
 				output += input.charAt(i);
 		}
+		// What's the intention of setting input to output here?
 		input = output;	
 		return output;
 	}
 	
 	/*4. Write a java function to check if two strings are Anagrams or not. (Score 2)
 		i. The function should take two input strings.
-		ii. Should return a boolean ¡®true¡¯ if the inputs are Anagrams else return ¡®false¡¯.
+		ii. Should return a boolean Â¡Â®trueÂ¡Â¯ if the inputs are Anagrams else return Â¡Â®falseÂ¡Â¯.
 	 */
 	public static boolean checkIfTwoStringsAreAnagrams(String s1, String s2) {
+		// Make sure you understand "==" and ".equals()", recommend using .equals() for Object comparision
 		if(s1 == s2 || s1.length() != s2.length())
 			return false;
 		char[] chars1 = s1.toCharArray(), chars2 = s2.toCharArray();
@@ -94,7 +96,7 @@ public class Assignment3 {
 /*5. Create a calculator that can perform the following features. (Total Score 4)
 i. The calculator should be able to perform Addition, subtraction, multiplication, division. (Score 2)
 ii. Should be able to perform squareRoot, square, cube. (Score 1)
-iii. Should be able to convert ¡®Fahrenheit-Celsius¡¯ , ¡®Feet-Inches¡¯. (Score 1)
+iii. Should be able to convert Â¡Â®Fahrenheit-CelsiusÂ¡Â¯ , Â¡Â®Feet-InchesÂ¡Â¯. (Score 1)
 Extra Credit(Score 2)
 The calculator should be able to solve a quadratic equation and return the solution as array.
 i. This function should take three arguments.
@@ -184,7 +186,7 @@ class calculator {
 	
 	public static void convert() {
 		Scanner in=new Scanner(System.in);
-		System.out.println("3. convert ¡ãF<->¡ãC  Feet<->Inch   input: number(space)type (exp: 100 F; 100 C; 10 Feet; 10 Inch)");
+		System.out.println("3. convert Â¡Ã£F<->Â¡Ã£C  Feet<->Inch   input: number(space)type (exp: 100 F; 100 C; 10 Feet; 10 Inch)");
 		String tmp = in.nextLine();
 		String arr[] = tmp.split(" ");
 		switch(arr[1]) {
@@ -192,10 +194,10 @@ class calculator {
 				System.out.println("wrong input");
 				break;
 			case "F":
-				System.out.println(arr[0] + "¡ãF" + " = " + (Double.valueOf(arr[0])-32)/1.8 + "¡ãC");
+				System.out.println(arr[0] + "Â¡Ã£F" + " = " + (Double.valueOf(arr[0])-32)/1.8 + "Â¡Ã£C");
 				break;
 			case "C":
-				System.out.println(arr[0] + "¡ãC" + " = " + (Double.valueOf(arr[0])*1.8+32) + "¡ãF");
+				System.out.println(arr[0] + "Â¡Ã£C" + " = " + (Double.valueOf(arr[0])*1.8+32) + "Â¡Ã£F");
 				break;
 			case "Feet":
 				System.out.println(arr[0] + " Feet" + " = " + (Double.valueOf(arr[0])*12) + " Inch");
@@ -229,6 +231,7 @@ class calculator {
 			solution[0] = (-b/2)/a;
 		}
 		else {
+			// What if a == 0?
 			solution[0] = (-b + Math.sqrt(value))/(2*a);
 			solution[1] = (-b - Math.sqrt(value))/(2*a);
 			System.out.println("(" + a + "x^2) + (" + b + "x) + (" + c + ") = 0  has two solutions: x1 = " + solution[0] + ", x2 = " + solution[1]);
