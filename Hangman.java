@@ -187,4 +187,4 @@ public class Hangman {
 		Hangman hangman = new Hangman(words);
 		hangman.playGame();
 	}
-}
+} 
