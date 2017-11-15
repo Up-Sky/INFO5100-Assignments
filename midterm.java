@@ -94,6 +94,7 @@ class Solution {
 		else if(isAvailable(maze, i, j)) {
 			path.add(new Cell(i, j));
 			addPath(maze, solution, new ArrayList<Cell>(path), i + 1, j);
+			// why pass path directly
 			addPath(maze, solution, path, i, j + 1);
 		}
 		else
