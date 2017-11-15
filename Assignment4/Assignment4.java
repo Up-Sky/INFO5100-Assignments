@@ -261,4 +261,4 @@ class Course {
 		this.numberOfStudent += 1;
 		this.students[numberOfStudent - 1] = student;
 	}
-}
+} 
