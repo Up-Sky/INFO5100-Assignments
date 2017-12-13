@@ -5,8 +5,8 @@ import java.util.Arrays;
 
 public class Assignment7 {
 	
-	/* 4. Pascal¡¯s triangle is a triangular array of the binomial coefficients. 
-	 * Write a function that takes an integer value n as input and prints first n lines of the Pascal¡¯s triangle. 
+	/* 4. PascalÂ¡Â¯s triangle is a triangular array of the binomial coefficients. 
+	 * Write a function that takes an integer value n as input and prints first n lines of the PascalÂ¡Â¯s triangle. 
 	 */
 	 public static void printPascalTriangle(int n) {
 		 ArrayList<ArrayList<Integer>> list = new ArrayList<ArrayList<Integer>>();
@@ -66,5 +66,4 @@ public class Assignment7 {
 		
 
 	}
-
 }
